@@ -24,36 +24,26 @@ EduWallet AI is a Streamlit prototype that helps international students estimate
 
 ## Installation
 
-Run the following commands one at a time in Windows Command Prompt.
+1. Clone or download this repository.
+2. Open a terminal in the project directory.
+3. Create and activate a Python virtual environment if desired.
+4. Install the required dependencies:
 
-Navigate to the project folder:
-
-```bat
-cd /d D:\EduWallet_AI_Milestone3
+```bash
+pip install -r requirements.txt
 ```
 
-Activate the virtual environment:
+## Run the Application
 
-```bat
-.venv_m3\Scripts\activate
+```bash
+streamlit run app.py
 ```
 
-Install the project dependencies:
+## Run Tests
 
-```bat
-python -m pip install -r requirements.txt
-python -m pip install pytest
+```bash
+python -m pytest -v
 ```
-
-If you are setting up the project on a different computer, create a virtual environment first:
-
-```bat
-python -m venv .venv_m3
-.venv_m3\Scripts\activate
-```
-
-Then install the dependencies using the commands above.
-
 ## Calculation Approach
 
 - Total cost = tuition + one-off expenses + monthly living expenses multiplied by duration.
@@ -62,9 +52,26 @@ Then install the dependencies using the commands above.
 - Stress testing models selected expense increases and reductions in available funds.
 - Currency conversion uses a manually entered exchange rate and fee; it is not a live quote.
 
-## Security and Limitations
+## Testing
+
+The latest recorded local test run completed successfully, with **21 tests passed**.
+
+The automated tests cover the financial calculation logic and financial report generation. Run the test suite again after code changes to verify the current version.
+
+This result demonstrates functional testing; it is not an independent security audit.
+
+## Security
 
 This is a demonstration prototype, not a production financial service. It does not connect to bank accounts, execute payments, transfer money, or provide live exchange rates. It does not currently implement authenticated accounts or enforced role-based permissions. Estimates depend on user inputs and assumptions. Downloaded reports should be handled carefully.
+
+## Limitations
+
+- Currency exchange rates are illustrative user-provided inputs and are not retrieved from a live exchange-rate service.
+- Financial projections depend on the assumptions and figures entered by the user.
+- The prototype does not provide bank integration, payments, user authentication, or role-based access control.
+- The application is a financial-planning aid, not professional financial advice or an official assessment of visa eligibility.
+
+Users should verify tuition fees, living costs, exchange rates, and other financial requirements with the relevant institutions before making decisions.
 
 ## Disclaimer
 
