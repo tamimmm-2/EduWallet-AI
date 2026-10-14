@@ -24,28 +24,35 @@ EduWallet AI is a Streamlit prototype that helps international students estimate
 
 ## Installation
 
-Run these commands from the project folder on Windows:
+Run the following commands one at a time in Windows Command Prompt.
+
+Navigate to the project folder:
 
 ```bat
 cd /d D:\EduWallet_AI_Milestone3
+```
+
+Activate the virtual environment:
+
+```bat
 .venv_m3\Scripts\activate
+```
+
+Install the project dependencies:
+
+```bat
 python -m pip install -r requirements.txt
 python -m pip install pytest
 ```
 
-## Run the Application
+If you are setting up the project on a different computer, create a virtual environment first:
 
 ```bat
-python -m streamlit run app.py
+python -m venv .venv_m3
+.venv_m3\Scripts\activate
 ```
 
-## Run Tests
-
-```bat
-python -m pytest -v
-```
-
-The last confirmed test run passed 21 tests. Rerun the tests before submission.
+Then install the dependencies using the commands above.
 
 ## Calculation Approach
 
