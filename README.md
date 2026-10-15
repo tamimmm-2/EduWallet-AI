@@ -6,15 +6,24 @@ International Student Financial Readiness Simulator
 
 EduWallet AI is a Streamlit prototype that helps international students estimate study costs, funding gaps, financial stress scenarios, and illustrative currency conversion.
 
-## Features
+## Key Features
 
-- Study budget calculator
-- Funding gap and cost coverage analysis
-- Financial readiness insights
-- Stress testing
-- Illustrative currency conversion using a manually entered rate
-- Downloadable financial report
-- Automated tests
+- **Study Budget Calculator:** Estimates tuition, setup expenses, and living costs over a selected study period.
+- **Funding Gap Analysis:** Compares projected expenses with available funds and estimates cost coverage.
+- **Premium Dashboard Interface:** Uses a navy-and-teal visual design with clearly presented financial metrics.
+- **What-If Life Simulator:** Lets users change monthly living costs and add unexpected expenses to compare alternative budgets.
+- **Survival Mode:** Simulates higher living costs, emergency expenses, and reduced available funds to examine potential financial shortfalls.
+- **Financial Readiness Insights:** Summarises baseline budget coverage and results under selected stress-test assumptions.
+- **Stress Testing:** Models increased living costs, additional cost shocks, and reduced financial support.
+- **Illustrative Currency Conversion:** Estimates a BDT amount using a manually entered exchange rate and transfer fee; it is not a live exchange quote.
+- **Downloadable Financial Report:** Generates a text report containing the user's entered assumptions and calculated results.
+- **Automated Tests:** Tests financial calculation and report-generation logic.
+
+## Important Limitations
+
+EduWallet AI is a competition prototype for illustrative financial planning. It does not connect to banks, execute payments, retrieve live exchange rates, verify funding, or determine admission, visa, or immigration eligibility. What-If Life Simulator and Survival Mode results depend on user-entered assumptions and are not predictions. The prototype does not implement user authentication or persistent personal profiles.
+
+The application is not financial, immigration, or visa advice.
 
 ## Technology
 
