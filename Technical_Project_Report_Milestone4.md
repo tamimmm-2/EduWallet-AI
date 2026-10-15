@@ -483,6 +483,20 @@ Its value lies in making financial assumptions visible and helping users explore
 
 The current version is a functional prototype for demonstration and evaluation. Further validation, testing, security review, and user feedback would be needed before it could be considered for production use.
 
+## Additional Features: What-If Life Simulator and Survival Mode
+
+The application includes two interactive financial-planning scenarios.
+
+**What-If Life Simulator:** Users can change their assumed monthly living costs and add a one-off unexpected expense. The application calculates the alternative total cost, funding gap, remaining surplus, and cost coverage.
+
+**Survival Mode:** Users can model higher monthly living costs, an emergency expense, and reduced available funds. The application calculates the resulting total cost, remaining funds, funding gap, surplus, and cost coverage.
+
+**Interface design:** A dark navy-and-teal theme highlights key financial metrics and distinguishes the main dashboard from the sidebar.
+
+**Limitations:** Scenario outputs are illustrative calculations based on user-entered assumptions, not predictions. These features do not verify financial eligibility or provide financial, immigration, or visa advice.
+
+**Testing:** Python syntax compilation, automated tests, and manual browser checks should be recorded according to the actual results obtained. Automated tests of calculation and reporting logic are not an independent security audit.
+
 
 
 \*\*Disclaimer:\*\* EduWallet AI provides illustrative estimates for planning and educational purposes only. It does not provide financial, legal, immigration, or visa advice and does not determine official financial eligibility.
